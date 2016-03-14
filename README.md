@@ -66,6 +66,12 @@ requires a WAR file, you can generate an `uberwar` instead:
 
     lein ring uberwar
 
+## TODO
+
+- Buddy for token authentication
+- HugSQL for SQL queries
+
+
 ## License
 
 Copyright 2016 Victor Neo

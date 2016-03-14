@@ -10,6 +10,6 @@
   (mount/start))
 
 (defn -main [& args]
- (init-app)
- (log/info (str "Application will be started on port " (:port env)))
- (jetty/run-jetty app {:port (:port env)}))
+  (init-app)
+  (log/info (str "Application will be started on port " (:port env)))
+  (jetty/run-jetty app {:port (:port env)}))

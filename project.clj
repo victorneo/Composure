@@ -22,7 +22,6 @@
   :resource-paths ["env/dev/resources"]
   :plugins [[lein-ring "0.9.7"]
             [lein-cprop "1.0.1"]]
-  ;:ring {:handler composure.handler/app}
   :profiles
   {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
                         [ring/ring-mock "0.3.0"]]}
