@@ -1,10 +1,22 @@
 # Composure
 
-A base project (but not a Leiningen template) for subsequent API based projects
-using [Compojure][] and [Compojure-API][].
+A Clojure web project for learning how different Clojure libraries play
+nice together.
+
+
+## Libraries
+
+- [Compojure][] - Routing library for Ring
+- [Compojure-API][] - API layer on top of Compojure
+- [Ring][] - HTTP API for Clojure
+- [cprop][] - Application Configuration for Clojure projects
+- [mount][] - Managing application state
 
 [Compojure]: https://github.com/weavejester/compojure
 [Compojure-API]: https://github.com/metosin/compojure-api
+[ring]: https://github.com/ring-clojure/ring
+[cprop]: https://github.com/tolitius/cprop
+[mount]: https://github.com/tolitius/cprop
 
 ## Prerequisites
 
@@ -45,7 +57,7 @@ browser open after the application has started, run:
 
 To start the application without opening the browser, run:
 
-    lein ring server-headless.
+    lein ring server-headless
 
 [lein-ring]: https://github.com/weavejester/lein-ring
 
@@ -65,12 +77,6 @@ If you are deploying to a Java web application server such as Tomcat that
 requires a WAR file, you can generate an `uberwar` instead:
 
     lein ring uberwar
-
-## TODO
-
-- Buddy for token authentication
-- HugSQL for SQL queries
-
 
 ## License
 
